@@ -155,4 +155,4 @@ promptUser()
   .then(promptProject)
   .then(portfolioData => {
     console.log(portfolioData);
-});
+}); 
