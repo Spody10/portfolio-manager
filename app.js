@@ -25,9 +25,6 @@ const promptUser = () => {
       {
         type: 'input',
         name: 'name',
-<<<<<<< HEAD
-        message: 'What is your name?'
-=======
         message: 'What is your name? (Required)',
         validate: nameInput => {
           if (nameInput) {
@@ -37,14 +34,10 @@ const promptUser = () => {
             return false;
           }
         }
->>>>>>> feature/questions
       },
       {
         type: 'input',
         name: 'github',
-<<<<<<< HEAD
-        message: 'Enter your GitHub Username'
-=======
         message: 'Enter your GitHub Username (Required)',
         validate: usernameInput => {
           if (usernameInput) {
@@ -60,14 +53,10 @@ const promptUser = () => {
         name: 'confirmAbout',
         message: 'Would you like to enter some information about yourself for an "About" section?',
         default: true
->>>>>>> feature/questions
       },
       {
         type: 'input',
         name: 'about',
-<<<<<<< HEAD
-        message: 'Provide some information about yourself:'
-=======
         message: 'Provide some information about yourself:',
         when: ({ confirmAbout }) => {
           if (confirmAbout) {
@@ -76,7 +65,6 @@ const promptUser = () => {
             return false;
           }
         }
->>>>>>> feature/questions
       }
     ]);
 };
@@ -98,9 +86,6 @@ const promptProject = portfolioData => {
       {
         type: 'input',
         name: 'name',
-<<<<<<< HEAD
-        message: 'What is the name of your project?'
-=======
         message: 'What is the name of your project (Required)',
         validate: projectName => {
           if (projectName) {
@@ -110,14 +95,10 @@ const promptProject = portfolioData => {
             return false;
           }
         }
->>>>>>> feature/questions
       },
       {
         type: 'input',
         name: 'description',
-<<<<<<< HEAD
-        message: 'Provide a description of the project (Required)'
-=======
         message: 'Provide a description of the project (Required)',
         validate: projectDiscription => {
           if (projectDiscription) {
@@ -127,7 +108,6 @@ const promptProject = portfolioData => {
             return false;
           }
         }
->>>>>>> feature/questions
       },
       {
         type: 'checkbox',
@@ -138,9 +118,6 @@ const promptProject = portfolioData => {
       {
         type: 'input',
         name: 'link',
-<<<<<<< HEAD
-        message: 'Enter the GitHub link to your project. (Required)'
-=======
         message: 'Enter the GitHub link to your project. (Required)',
         validate: projectLink => {
           if (projectLink) {
@@ -150,7 +127,6 @@ const promptProject = portfolioData => {
             return false;
           }
         }
->>>>>>> feature/questions
       },
       {
         type: 'confirm',
