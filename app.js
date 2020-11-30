@@ -1,5 +1,9 @@
 const inquirer = require("inquirer");
+<<<<<<< HEAD
 const { writeFile, copyFile } = require('./utils/generate-site.js');
+=======
+const fs = require("fs");
+>>>>>>> bacb8d3e5d2231d45a1218a3e7dbb1e1a51e18b6
 const generatePage = require("./src/page-template");
 
 const promptUser = () => {
@@ -187,6 +191,7 @@ const mockData = {
   };
 const pageHTML = generatePage(mockData);
 
+<<<<<<< HEAD
 
 promptUser()
   .then(promptProject)
@@ -206,3 +211,38 @@ promptUser()
   .catch(err => {
     console.log(err);
   });
+=======
+/* ================================================================= */
+
+// // promptUser()
+// //   .then(promptProject)
+// //   .then((portfolioData) => {
+// //     const pageHTML = generatePage(portfolioData);
+
+    fs.writeFile("./index.html", pageHTML, (err) => {
+      if (err) throw err;
+
+      console.log("Portfolio complete! Check out index.html to see the output!");
+    });
+//   });
+
+
+
+
+
+/* ======================================= */
+
+// // const printProfileData = (profileDataArr) => {
+// //   for (let i = 0; i < profileDataArr.length; i++) {
+// //     console.log(profileDataArr[i]);
+// //   }
+
+// //   console.log("==================");
+
+// //   profileDataArr.forEach((profileItem) => {
+// //     console.log(profileItem);
+// //   });
+// // };
+
+// printProfileData(profileDataArgs);
+>>>>>>> bacb8d3e5d2231d45a1218a3e7dbb1e1a51e18b6
